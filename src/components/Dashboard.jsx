@@ -317,7 +317,7 @@ export default function Dashboard() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl px-6 py-10">
+      <main className="mx-auto max-w-7xl px-6 py-10">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
           {/* left side */}
           <section>
@@ -382,7 +382,7 @@ export default function Dashboard() {
               </p>
               <p>
                 <span className="mr-2 font-bold">🍭</span>
-                800 POINTS - 9000 POINTS = 4 CANDIES
+                800 POINTS - 900 POINTS = 4 CANDIES
               </p>
 
               <p>
