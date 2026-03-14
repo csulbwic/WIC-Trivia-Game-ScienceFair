@@ -1,6 +1,11 @@
 import React, { useMemo, useState } from "react";
 
-const POINTS = [100, 200, 300, 500];
+const POINTS = [100, 200, 300, 400];
+// Debug: print the active POINTS array at runtime to ensure the app loaded the updated values
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line no-console
+  console.log("DEBUG: POINTS loaded:", POINTS);
+}
 const COLS = [
   { key: "c1", title: "Category A" },
   { key: "c2", title: "Category B" },
