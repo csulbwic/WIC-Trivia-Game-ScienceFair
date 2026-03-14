@@ -1,0 +1,819 @@
+COMPUTER 
+    
+export const MORE_COMPUTER_QUESTIONS = {
+  boardTitles: ['Data & Bits', 'Troubleshooting', 'Web Basics', 'AI & Future'],
+  
+  question: [
+    // --- Data & Bits (Units of Information) ---
+    {
+      question: "What is the smallest unit of data in a computer, represented by a 0 or 1?",
+      choices: ["Byte", "Bit", "Gigabyte", "Pixel"],
+      answer: "Bit",
+    },
+    {
+      question: "How many 'bits' make up one 'byte'?",
+      choices: ["2", "4", "8", "10"],
+      answer: "8",
+    },
+    {
+      question: "Which of these is the largest unit of storage?",
+      choices: ["Megabyte", "Gigabyte", "Terabyte", "Kilobyte"],
+      answer: "Terabyte",
+    },
+    {
+      question: "What is a 'pixel'?",
+      choices: ["A type of computer mouse", "A tiny dot of color on a screen", "A loud sound", "A battery"],
+      answer: "A tiny dot of color on a screen",
+    },
+    {
+      question: "What does 'URL' stand for (the address of a website)?",
+      choices: ["Universal Robot Language", "Uniform Resource Locator", "User Remote Link", "United Radio Line"],
+      answer: "Uniform Resource Locator",
+    },
+
+    // --- Troubleshooting & Problem Solving ---
+    {
+      question: "What is the first thing you should check if your monitor is blank?",
+      choices: ["Buy a new one", "Check if it is plugged in", "Shake the computer", "Call a friend"],
+      answer: "Check if it is plugged in",
+    },
+    {
+      question: "What is 'Troubleshooting'?",
+      choices: ["A way to play games", "The process of finding and fixing a problem", "Deleting all your files", "A type of fast typing"],
+      answer: "The process of finding and fixing a problem",
+    },
+    {
+      question: "If your computer 'freezes,' which shortcut can help you close a stuck program?",
+      choices: ["Ctrl + C", "Ctrl + Alt + Delete", "Spacebar", "Backspace"],
+      answer: "Ctrl + Alt + Delete",
+    },
+    {
+      question: "What should you do if an app on your tablet stops working?",
+      choices: ["Throw the tablet", "Close and restart the app", "Wait for a year", "Put it in water"],
+      answer: "Close and restart the app",
+    },
+    {
+      question: "Which part of the computer usually handles 'Processing' the data?",
+      choices: ["The Printer", "The CPU", "The Speakers", "The Keyboard"],
+      answer: "The CPU",
+    },
+
+    // --- Web Basics & Connections ---
+    {
+      question: "What is a 'Web Browser' used for?",
+      choices: ["To write an essay", "To view websites on the internet", "To paint a picture", "To charge a battery"],
+      answer: "To view websites on the internet",
+    },
+    {
+      question: "Which of these is a popular search engine?",
+      choices: ["Minecraft", "Google", "Roblox", "YouTube"],
+      answer: "Google",
+    },
+    {
+      question: "What does 'Wi-Fi' allow your computer to do?",
+      choices: ["Connect to the internet without a wire", "Print on paper", "Scan a photo", "Turn on the light"],
+      answer: "Connect to the internet without a wire",
+    },
+    {
+      question: "What is the 'Cloud'?",
+      choices: ["A white thing in the sky", "Saving your data on the internet instead of just your computer", "A type of weather", "A computer virus"],
+      answer: "Saving your data on the internet instead of just your computer",
+    },
+    {
+      question: "Which file format is most common for a 'Picture'?",
+      choices: [".mp3", ".jpg", ".txt", ".exe"],
+      answer: ".jpg",
+    },
+
+    // --- AI, Robotics & Digital Life ---
+    {
+      question: "What does 'AI' stand for?",
+      choices: ["Apple Information", "Artificial Intelligence", "Always Interesting", "Automatic Input"],
+      answer: "Artificial Intelligence",
+    },
+    {
+      question: "How do 'Machine Learning' computers learn new things?",
+      choices: ["By going to school", "By looking at patterns in data", "By eating food", "By sleeping"],
+      answer: "By looking at patterns in data",
+    },
+    {
+      question: "What is a 'Sprite' in coding (like in Scratch)?",
+      choices: ["A type of soda", "A character or object on the screen you can code", "A computer bug", "A loud noise"],
+      answer: "A character or object on the screen you can code",
+    },
+    {
+      question: "What is 'Cyberbullying'?",
+      choices: ["Using technology to be mean to others", "A fast way to type", "Playing a game safely", "Buying a new phone"],
+      answer: "Using technology to be mean to others",
+    },
+    {
+      question: "Which of these is a 'Good Digital Citizen' rule?",
+      choices: ["Keep your password secret", "Share your home address", "Be mean in chat", "Download things without asking"],
+      answer: "Keep your password secret",
+    }
+  ]
+};
+
+
+SPACE 
+
+export const MORE_SPACE_QUESTIONS = {
+  boardTitles: ['Astronauts', 'Deep Space', 'Our Moon', 'Space Tech'],
+  
+  question: [
+    // --- Astronaut Life & Gear ---
+    {
+      question: "How do astronauts sleep in space so they don't float away?",
+      choices: ["In a regular bed", "Strapped into sleeping bags", "On the floor", "They don't sleep"],
+      answer: "Strapped into sleeping bags",
+    },
+    {
+      question: "What is the name of the 'giant house' in space where astronauts live and work?",
+      choices: ["The Moon Base", "The Space Hotel", "International Space Station", "Starship Enterprise"],
+      answer: "International Space Station",
+    },
+    {
+      question: "What do astronauts use to talk to each other while outside on a spacewalk?",
+      choices: ["Shouting", "Hand signals", "Radios in their helmets", "Writing on paper"],
+      answer: "Radios in their helmets",
+    },
+    {
+      question: "Why does food have to be specially dried or put in pouches for space?",
+      choices: ["To make it taste better", "To keep crumbs from floating into machines", "To make it change color", "So it stays frozen"],
+      answer: "To keep crumbs from floating into machines",
+    },
+    {
+      question: "Which of these is a feeling astronauts have in space because there is no 'up' or 'down'?",
+      choices: ["Weightlessness", "Heavy feet", "Super strength", "Giant ears"],
+      answer: "Weightlessness",
+    },
+
+    // --- Deep Space & Galaxies ---
+    {
+      question: "What is a 'Black Hole'?",
+      choices: ["A hole in the ground", "An area with gravity so strong even light can't escape", "A dark planet", "A shadow on the Moon"],
+      answer: "An area with gravity so strong even light can't escape",
+    },
+    {
+      question: "Which of these is a 'comet' made of?",
+      choices: ["Only fire", "Ice, dust, and rocky gas", "Cotton candy", "Liquid water"],
+      answer: "Ice, dust, and rocky gas",
+    },
+    {
+      question: "What do we call a star that explodes at the end of its life?",
+      choices: ["A Supernova", "A Shooting Star", "A Solar Flare", "A Planet"],
+      answer: "A Supernova",
+    },
+    {
+      question: "The 'Milky Way' is the name of our...",
+      choices: ["Solar System", "Galaxy", "Planet", "Favorite Candy"],
+      answer: "Galaxy",
+    },
+    {
+      question: "What is a 'Light Year'?",
+      choices: ["The time it takes to travel to the Sun", "The distance light travels in one year", "A very bright year", "The weight of a star"],
+      answer: "The distance light travels in one year",
+    },
+
+    // --- All About the Moon ---
+    {
+      question: "Why does the Moon look like it's glowing at night?",
+      choices: ["It is a ball of fire", "It reflects light from the Sun", "It has giant flashlights", "It is made of gold"],
+      answer: "It reflects light from the Sun",
+    },
+    {
+      question: "What are the 'craters' on the Moon caused by?",
+      choices: ["Volcanoes", "Space rocks (meteors) hitting it", "Moon people digging", "Wind and rain"],
+      answer: "Space rocks (meteors) hitting it",
+    },
+    {
+      question: "Who were the first people to walk on the Moon in 1969?",
+      choices: ["The Wright Brothers", "Neil Armstrong and Buzz Aldrin", "Elon Musk", "Albert Einstein"],
+      answer: "Neil Armstrong and Buzz Aldrin",
+    },
+    {
+      question: "True or False: There is no wind or rain on the Moon.",
+      choices: ["True", "False"],
+      answer: "True",
+    },
+    {
+      question: "What do we call the 'Ocean Tides' (rising water) caused by the Moon's gravity?",
+      choices: ["The Wave Cycle", "Tides", "Currents", "Surfing"],
+      answer: "Tides",
+    },
+
+    // --- Space Technology & California History ---
+    {
+      question: "What is a 'Rover'?",
+      choices: ["A space dog", "A robotic vehicle used to explore planets", "A fast rocket", "A type of telescope"],
+      answer: "A robotic vehicle used to explore planets",
+    },
+    {
+      question: "Which big telescope is currently taking amazing pictures of deep space?",
+      choices: ["Hubble", "James Webb Space Telescope", "Galileo", "The Moon"],
+      answer: "James Webb Space Telescope",
+    },
+    {
+      question: "Where in California were the Space Shuttles built?",
+      choices: ["San Diego", "Palmdale", "Long Beach", "San Francisco"],
+      answer: "Palmdale",
+    },
+    {
+      question: "What does a satellite do while orbiting the Earth?",
+      choices: ["Takes pictures and sends signals", "Sleeps", "Burns up", "Fixes the Moon"],
+      answer: "Takes pictures and sends signals",
+    },
+    {
+      question: "What is the name of the new NASA mission to send people back to the Moon?",
+      choices: ["Apollo", "Artemis", "Mars One", "SpaceX"],
+      answer: "Artemis",
+    }
+  ]
+};
+
+
+ENGINEERING
+
+export const MORE_ENGINEERING_QUESTIONS = {
+  // Aligned with CA NGSS K-5: Design, Materials, and Structures
+  boardTitles: ['Shapes', 'Materials', 'Flight', 'Famous Ideas'],
+  
+  question: [
+    // --- Strong Shapes & Structures ---
+    {
+      question: "Which shape is considered the strongest for building a bridge?",
+      choices: ["Square", "Triangle", "Circle", "Rectangle"],
+      answer: "Triangle",
+    },
+    {
+      question: "What is the name of the top stone in an arch bridge that holds it together?",
+      choices: ["Cornerstone", "Keystone", "Cap", "Lock"],
+      answer: "Keystone",
+    },
+    {
+      question: "Engineers use 'Dams' to hold back water. What shape are they usually?",
+      choices: ["Straight", "Curved (Arch)", "Zig-zag", "Square"],
+      answer: "Curved (Arch)",
+    },
+    {
+      question: "What do engineers call the 'skeleton' or frame inside a building?",
+      choices: ["The Skin", "The Structure", "The Walls", "The Roof"],
+      answer: "The Structure",
+    },
+    {
+      question: "Why do skyscrapers have deep 'Foundations' in the ground?",
+      choices: ["To hide from the sun", "To stay stable and not tip over", "To store water", "To look taller"],
+      answer: "To stay stable and not tip over",
+    },
+
+    // --- Engineering Materials ---
+    {
+      question: "Which material is best for an engineer to use for a car's windshield?",
+      choices: ["Plastic Wrap", "Safety Glass", "Clear Wood", "Metal"],
+      answer: "Safety Glass",
+    },
+    {
+      question: "What is 'Concrete' made of?",
+      choices: ["Just water", "Sand, gravel, water, and cement", "Baking soda and flour", "Melted plastic"],
+      answer: "Sand, gravel, water, and cement",
+    },
+    {
+      question: "Engineers often use 'Composite' materials. What does that mean?",
+      choices: ["Materials made of only one thing", "A mix of two or more materials", "Materials that break easily", "Invisible materials"],
+      answer: "A mix of two or more materials",
+    },
+    {
+      question: "Why is 'Steel' used in the frame of Long Beach buildings?",
+      choices: ["It is cheap", "It is strong and can bend slightly in earthquakes", "It is very light", "It is made of wood"],
+      answer: "It is strong and can bend slightly in earthquakes",
+    },
+    {
+      question: "Which material is a 'Renewable' choice for building a house?",
+      choices: ["Steel", "Bamboo or Wood", "Concrete", "Iron"],
+      answer: "Bamboo or Wood",
+    },
+
+    // --- Flight & Aerospace (Long Beach Hub) ---
+    {
+      question: "What do Aerospace Engineers call the force that pushes a plane UP?",
+      choices: ["Gravity", "Lift", "Drag", "Thrust"],
+      answer: "Lift",
+    },
+    {
+      question: "Which force acts AGAINST a rocket as it tries to fly through the air?",
+      choices: ["Drag (Air Resistance)", "Magnetism", "Light", "Solar Power"],
+      answer: "Drag (Air Resistance)",
+    },
+    {
+      question: "What shape do engineers give airplane wings to help them fly?",
+      choices: ["Square", "Airfoil (Curved on top)", "Flat like a pancake", "Round like a ball"],
+      answer: "Airfoil (Curved on top)",
+    },
+    {
+      question: "What is a 'Wind Tunnel' used for in engineering?",
+      choices: ["To cool down the lab", "To test how air flows over a model", "To make electricity", "To dry paint"],
+      answer: "To test how air flows over a model",
+    },
+    {
+      question: "Which part of a rocket provides the 'Thrust' to go into space?",
+      choices: ["The Nose Cone", "The Engine", "The Window", "The Paint"],
+      answer: "The Engine",
+    },
+
+    // --- Engineering in the Real World ---
+    {
+      question: "What does an 'Environmental Engineer' help protect?",
+      choices: ["Video games", "Nature, water, and air", "Old toys", "Candy stores"],
+      answer: "Nature, water, and air",
+    },
+    {
+      question: "If a toy is 'Ergonomic,' what does that mean?",
+      choices: ["It is very expensive", "It is designed to be comfortable and easy to use", "It is blue", "It uses batteries"],
+      answer: "It is designed to be comfortable and easy to use",
+    },
+    {
+      question: "What is a 'Blueprint'?",
+      choices: ["A blue painting", "A detailed technical drawing or plan", "A type of material", "A computer bug"],
+      answer: "A detailed technical drawing or plan",
+    },
+    {
+      question: "Which type of engineer would design a new 'Solar Panel'?",
+      choices: ["Civil Engineer", "Electrical Engineer", "Software Engineer", "Safety Engineer"],
+      answer: "Electrical Engineer",
+    },
+    {
+      question: "In Long Beach, engineers built the 'International Gateway Bridge.' What type of bridge is it?",
+      choices: ["Wooden Log", "Cable-Stayed Bridge", "Rope Bridge", "Floating Bridge"],
+      answer: "Cable-Stayed Bridge",
+    }
+  ]
+};
+
+
+HUMAN BODY
+export const MORE_HUMAN_BODY_QUESTIONS = {
+  // Aligned to LBUSD Health and Science (K-5)
+  boardTitles: ['The Skeleton', 'Inside Jobs', 'Digestion', 'Health & Safety'],
+
+  question: [
+    // --- The Skeleton & Muscles ---
+    {
+      question: "What is the longest and strongest bone in the human body?",
+      choices: ["The Ribs", "The Femur (Thigh bone)", "The Skull", "The Finger"],
+      answer: "The Femur (Thigh bone)",
+    },
+    {
+      question: "Which part of your skeleton protects your brain?",
+      choices: ["The Rib Cage", "The Skull", "The Spine", "The Pelvis"],
+      answer: "The Skull",
+    },
+    {
+      question: "What do we call the place where two bones meet (like your elbow)?",
+      choices: ["A Muscle", "A Joint", "A Nerve", "A Skin"],
+      answer: "A Joint",
+    },
+    {
+      question: "Which of these is a muscle that never gets tired and never stops pumping?",
+      choices: ["Biceps", "The Heart", "The Tongue", "The Calf"],
+      answer: "The Heart",
+    },
+    {
+      question: "How many bones does an adult human typically have?",
+      choices: ["100", "206", "300", "50"],
+      answer: "206",
+    },
+
+    // --- Inside Jobs (Circulation & Respiration) ---
+    {
+      question: "What are the tiny tubes that carry blood through your body?",
+      choices: ["Straws", "Blood Vessels", "Nerves", "Bones"],
+      answer: "Blood Vessels",
+    },
+    {
+      question: "What gas do we breathe OUT as waste?",
+      choices: ["Oxygen", "Carbon Dioxide", "Helium", "Nitrogen"],
+      answer: "Carbon Dioxide",
+    },
+    {
+      question: "What is your 'Pulse' a measure of?",
+      choices: ["How fast you run", "How fast your heart beats", "How tall you are", "How much you weigh"],
+      answer: "How fast your heart beats",
+    },
+    {
+      question: "Which part of the body is mostly made of water (about 60%)?",
+      choices: ["Your Hair", "The Whole Human Body", "Your Teeth", "Your Nails"],
+      answer: "The Whole Human Body",
+    },
+    {
+      question: "What do we call the liquid in our mouth that helps us break down food?",
+      choices: ["Water", "Saliva (Spit)", "Juice", "Milk"],
+      answer: "Saliva (Spit)",
+    },
+
+    // --- Digestion & Teeth ---
+    {
+      question: "About how long does it take for food to fully travel through your body?",
+      choices: ["5 minutes", "1 hour", "24 to 72 hours", "1 week"],
+      answer: "24 to 72 hours",
+    },
+    {
+      question: "What is the hardest part of the human body?",
+      choices: ["Bone", "Tooth Enamel", "Muscle", "Nail"],
+      answer: "Tooth Enamel",
+    },
+    {
+      question: "What are the sharp teeth in the front used for cutting food called?",
+      choices: ["Molars", "Incisors", "Wisdom teeth", "Canines"],
+      answer: "Incisors",
+    },
+    {
+      question: "Which organ is shaped like a 'J' and uses acid to mash up food?",
+      choices: ["The Stomach", "The Liver", "The Brain", "The Lungs"],
+      answer: "The Stomach",
+    },
+    {
+      question: "True or False: Your small intestine is actually longer than you are tall!",
+      choices: ["True", "False"],
+      answer: "True",
+    },
+
+    // --- Health, Safety & Senses ---
+    {
+      question: "Which of these is the body's largest organ?",
+      choices: ["The Brain", "The Liver", "The Skin", "The Lungs"],
+      answer: "The Skin",
+    },
+    {
+      question: "What is the name for the 'color' part of your eye?",
+      choices: ["Pupil", "Iris", "Lid", "Lens"],
+      answer: "Iris",
+    },
+    {
+      question: "Which of these is a 'Healthy Habit' for a strong heart?",
+      choices: ["Sitting all day", "Eating candy for lunch", "Exercise and running", "Sleeping 2 hours"],
+      answer: "Exercise and running",
+    },
+    {
+      question: "Why do we shiver when we are cold?",
+      choices: ["To scare the cold", "To move muscles and create heat", "To make noise", "Because we are scared"],
+      answer: "To move muscles and create heat",
+    },
+    {
+      question: "What are the tiny 'hairs' in your nose used for?",
+      choices: ["To look funny", "To trap dust and germs", "To help you smell", "To keep your nose warm"],
+      answer: "To trap dust and germs",
+    }
+  ]
+};
+
+
+GEOLOGY 
+export const MORE_GEOLOGY_QUESTIONS = {
+  // Aligned to LBUSD / CA NGSS K-5: Earth Materials & Systems
+  boardTitles: ['Deep Earth', 'Volcanoes', 'Beach & Sand', 'Fossils'],
+  
+  question: [
+    // --- Deep Earth & Layers ---
+    {
+      question: "Which layer of the Earth is the hottest and is at the very center?",
+      choices: ["The Crust", "The Mantle", "The Inner Core", "The Ocean"],
+      answer: "The Inner Core",
+    },
+    {
+      question: "The Earth's 'Mantle' is located between which two layers?",
+      choices: ["Crust and Core", "Ocean and Sky", "Sand and Grass", "Rocks and Air"],
+      answer: "Crust and Core",
+    },
+    {
+      question: "What is the 'Crust' of the Earth mostly made of?",
+      choices: ["Water", "Solid Rock", "Soft Mud", "Liquid Metal"],
+      answer: "Solid Rock",
+    },
+    {
+      question: "True or False: The Earth's plates are always moving very slowly.",
+      choices: ["True", "False"],
+      answer: "True",
+    },
+    {
+      question: "What do we call the 'molten' (melted) rock while it is still UNDERGROUND?",
+      choices: ["Lava", "Magma", "Mud", "Ash"],
+      answer: "Magma",
+    },
+
+    // --- Volcanoes & Igneous Action ---
+    {
+      question: "What do we call magma once it comes out of a volcano and onto the surface?",
+      choices: ["Lava", "Water", "Steam", "Dust"],
+      answer: "Lava",
+    },
+    {
+      question: "What is a 'Dormant' volcano?",
+      choices: ["One that is exploding", "One that is 'sleeping' but could wake up", "A dead volcano", "A mountain with no hole"],
+      answer: "One that is 'sleeping' but could wake up",
+    },
+    {
+      question: "Which rock is black, shiny, and looks like glass because it cooled so fast?",
+      choices: ["Granite", "Obsidian", "Coal", "Sandstone"],
+      answer: "Obsidian",
+    },
+    {
+      question: "Which light rock has so many air bubbles that it can actually FLOAT on water?",
+      choices: ["Basalt", "Pumice", "Marble", "Slate"],
+      answer: "Pumice",
+    },
+    {
+      question: "The 'Ring of Fire' is a circle of volcanoes around which ocean?",
+      choices: ["Atlantic", "Indian", "Pacific", "Arctic"],
+      answer: "Pacific",
+    },
+
+    // --- Beach, Sand & Erosion ---
+    {
+      question: "What is most beach sand made of?",
+      choices: ["Tiny pieces of broken rock and shells", "Sugar", "Plastic", "Small seeds"],
+      answer: "Tiny pieces of broken rock and shells",
+    },
+    {
+      question: "Why are rocks at the beach usually smooth and round?",
+      choices: ["People polish them", "The waves tumble them against each other", "They grow that way", "Fish eat the sharp edges"],
+      answer: "The waves tumble them against each other",
+    },
+    {
+      question: "Which force of nature creates large 'Sand Dunes' in the desert?",
+      choices: ["Rain", "Wind", "Gravity", "Ice"],
+      answer: "Wind",
+    },
+    {
+      question: "What do we call a giant slow-moving river of ice that can carve through mountains?",
+      choices: ["A Stream", "A Glacier", "A Waterfall", "A Flood"],
+      answer: "A Glacier",
+    },
+    {
+      question: "What is 'Deposition' in geology?",
+      choices: ["Breaking a rock", "Dropping or leaving rocks/sand in a new place", "Melting a rock", "Painting a rock"],
+      answer: "Dropping or leaving rocks/sand in a new place",
+    },
+
+    // --- Fossils & Earth History ---
+    {
+      question: "What is a scientist who studies fossils and ancient life called?",
+      choices: ["Geologist", "Paleontologist", "Biologist", "Astronaut"],
+      answer: "Paleontologist",
+    },
+    {
+      question: "Which of these can become a fossil?",
+      choices: ["Bones", "Teeth", "Footprints", "All of the above"],
+      answer: "All of the above",
+    },
+    {
+      question: "What is the name of the giant 'Supercontinent' that existed millions of years ago?",
+      choices: ["Pangea", "Atlantis", "America", "Europa"],
+      answer: "Pangea",
+    },
+    {
+      question: "In California, where can you find famous fossils of Mammoths and Sabertooth Cats?",
+      choices: ["Disneyland", "La Brea Tar Pits", "The Beach", "The Forest"],
+      answer: "La Brea Tar Pits",
+    },
+    {
+      question: "How long does it usually take for a rock to turn into a 'Metamorphic' rock?",
+      choices: ["1 day", "1 week", "1 year", "Millions of years"],
+      answer: "Millions of years",
+    }
+  ]
+};
+
+
+ELECTRICITY
+export const MORE_ELECTRICITY_QUESTIONS = {
+  // Aligned with CA NGSS K-5: Energy, Matter, and Electrical Systems
+  boardTitles: ['Energy Flow', 'Batteries', 'More Safety', 'Static Fun'],
+  
+  question: [
+    // --- Energy Flow & Connections ---
+    {
+      question: "Which of these is a 'Source' of electrical energy?",
+      choices: ["A Lightbulb", "A Battery", "A Switch", "A Wire"],
+      answer: "A Battery",
+    },
+    {
+      question: "What happens if you remove one bulb from a 'Series' circuit?",
+      choices: ["The others get brighter", "All the lights go out", "The battery explodes", "Nothing changes"],
+      answer: "All the lights go out",
+    },
+    {
+      question: "In a 'Parallel' circuit, what happens if one bulb breaks?",
+      choices: ["The others stay on", "They all turn off", "The wires melt", "The battery stops working"],
+      answer: "The others stay on",
+    },
+    {
+      question: "What do we call a material that blocks electricity from flowing?",
+      choices: ["Conductor", "Insulator", "Magnet", "Metal"],
+      answer: "Insulator",
+    },
+    {
+      question: "Which of these is a common 'Conductor' used in home wiring?",
+      choices: ["Plastic", "Copper", "Rubber", "Glass"],
+      answer: "Copper",
+    },
+
+    // --- All About Batteries ---
+    {
+      question: "What kind of energy is stored inside a battery?",
+      choices: ["Light energy", "Chemical energy", "Sound energy", "Wind energy"],
+      answer: "Chemical energy",
+    },
+    {
+      question: "Batteries have two ends. What are they called?",
+      choices: ["Up and Down", "Positive and Negative", "Hot and Cold", "Left and Right"],
+      answer: "Positive and Negative",
+    },
+    {
+      question: "What is a 'Rechargeable' battery?",
+      choices: ["A battery that lasts forever", "A battery that can be filled with energy again", "A battery made of wood", "A battery that doesn't work"],
+      answer: "A battery that can be filled with energy again",
+    },
+    {
+      question: "What happens if you put a battery in a flashlight the 'wrong way'?",
+      choices: ["It gets super bright", "It won't turn on", "It starts a fire", "It changes color"],
+      answer: "It won't turn on",
+    },
+    {
+      question: "What do we call it when several batteries are connected together?",
+      choices: ["A Pile", "A Battery Pack", "A Circuit Board", "A Generator"],
+      answer: "A Battery Pack",
+    },
+
+    // --- Electrical Safety Rules ---
+    {
+      question: "Why should you never put a fork or metal object into a wall outlet?",
+      choices: ["You might break the fork", "You could get a dangerous electric shock", "It will make a loud noise", "The lights will flicker"],
+      answer: "You could get a dangerous electric shock",
+    },
+    {
+      question: "What is a 'Short Circuit'?",
+      choices: ["A very small battery", "When electricity takes a shortcut and gets too hot", "A fast way to charge a phone", "A light that is too short"],
+      answer: "When electricity takes a shortcut and gets too hot",
+    },
+    {
+      question: "What should you do if you see a 'downed' power line on the street?",
+      choices: ["Step over it", "Stay far away and tell an adult", "Pick it up with a stick", "Call a friend"],
+      answer: "Stay far away and tell an adult",
+    },
+    {
+      question: "Which of these is a safety device that 'trips' or turns off if too much electricity flows?",
+      choices: ["A Battery", "A Circuit Breaker", "A Light Switch", "A Lightbulb"],
+      answer: "A Circuit Breaker",
+    },
+    {
+      question: "Why is water so dangerous around electricity?",
+      choices: ["It makes the light blue", "It is a good conductor and can carry electricity to you", "It smells bad", "It makes the battery heavy"],
+      answer: "It is a good conductor and can carry electricity to you",
+    },
+
+    // --- Static Electricity & Magnets ---
+    {
+      question: "What creates a tiny 'spark' when you touch a doorknob after walking on carpet?",
+      choices: ["Batteries", "Static Electricity", "Magnetism", "A Flashlight"],
+      answer: "Static Electricity",
+    },
+    {
+      question: "In static electricity, what do two 'positive' charges do?",
+      choices: ["They stick together", "They push each other away (repel)", "They disappear", "They turn into water"],
+      answer: "They push each other away (repel)",
+    },
+    {
+      question: "What natural event is a giant form of static electricity in the sky?",
+      choices: ["Rain", "Lightning", "A Tornado", "Snow"],
+      answer: "Lightning",
+    },
+    {
+      question: "What can you use to create electricity from moving wind or water?",
+      choices: ["A Mirror", "A Generator", "A Toaster", "A Pillow"],
+      answer: "A Generator",
+    },
+    {
+      question: "Which of these is used in some 'green' cars to save energy?",
+      choices: ["Gasoline", "Electric Motors", "Coal", "Fire"],
+      answer: "Electric Motors",
+    }
+  ]
+};
+
+
+WEATHER 
+export const MORE_WEATHER_QUESTIONS = {
+  // Simple titles for younger elementary students
+  boardTitles: ['Fun in the Sky', 'The Water Cycle', 'Be a Scientist', 'Special Weather'],
+  
+  question: [
+    // --- K-1: Fun in the Sky ---
+    {
+      question: "What is a big, colorful arch that sometimes appears after it rains?",
+      choices: ["A Rainbow", "A Cloud", "A Rocket", "A Bridge"],
+      answer: "A Rainbow",
+    },
+    {
+      question: "Which of these is the biggest and brightest thing in our daytime sky?",
+      choices: ["The Moon", "The Sun", "A Star", "A Bird"],
+      answer: "The Sun",
+    },
+    {
+      question: "What do we call the dark shape on the ground made by your body in the sun?",
+      choices: ["A Reflection", "A Shadow", "A Ghost", "A Puddle"],
+      answer: "A Shadow",
+    },
+    {
+      question: "Which of these is a sign of a very hot day?",
+      choices: ["Building a snowman", "Drinking cold water", "Wearing a scarf", "Using an umbrella"],
+      answer: "Drinking cold water",
+    },
+    {
+      question: "What is 'Wind'?",
+      choices: ["Moving air", "A cloud falling", "The sun's light", "Falling rain"],
+      answer: "Moving air",
+    },
+
+    // --- Grades 2-3: The Water Cycle (Easy Steps) ---
+    {
+      question: "Where do clouds come from?",
+      choices: ["The ground", "Tiny water droplets in the air", "The moon", "Factories"],
+      answer: "Tiny water droplets in the air",
+    },
+    {
+      question: "What do we call 'frozen rain' that looks like little white balls?",
+      choices: ["Snow", "Hail", "Mist", "Dust"],
+      answer: "Hail",
+    },
+    {
+      question: "What happens to a puddle on the sidewalk when the sun comes out?",
+      choices: ["It gets bigger", "It disappears (evaporates)", "It turns into ice", "It turns green"],
+      answer: "It disappears (evaporates)",
+    },
+    {
+      question: "Where does rain go after it falls on the ground?",
+      choices: ["Into the dirt or the ocean", "It disappears forever", "It goes to the moon", "It stays still"],
+      answer: "Into the dirt or the ocean",
+    },
+    {
+      question: "What is it called when a gas turns back into a liquid (like 'sweat' on a cold soda can)?",
+      choices: ["Melting", "Condensation", "Cooking", "Boiling"],
+      answer: "Condensation",
+    },
+
+    // --- Grade 4: Be a Weather Scientist ---
+    {
+      question: "Which tool tells us WHICH WAY the wind is blowing?",
+      choices: ["Thermometer", "Wind Vane", "Ruler", "Rain Gauge"],
+      answer: "Wind Vane",
+    },
+    {
+      question: "Which clouds look like thin, wispy 'horse tails' high in the sky?",
+      choices: ["Cumulus", "Cirrus", "Stratus", "Nimbus"],
+      answer: "Cirrus",
+    },
+    {
+      question: "If the temperature is 32 degrees (F), what will happen to rain?",
+      choices: ["It will boil", "It will turn into ice or snow", "It will disappear", "It will turn blue"],
+      answer: "It will turn into ice or snow",
+    },
+    {
+      question: "What is a 'Meteorologist'?",
+      choices: ["A space traveler", "A scientist who studies weather", "A person who fixes cars", "A doctor"],
+      answer: "A scientist who studies weather",
+    },
+    {
+      question: "Which tool do we use to see how much rain fell at our school?",
+      choices: ["Thermometer", "Rain Gauge", "Clock", "Scale"],
+      answer: "Rain Gauge",
+    },
+
+    // --- Grade 5: Special Weather & Safety ---
+    {
+      question: "What is a 'Severe Weather Warning'?",
+      choices: ["A message to go outside and play", "A message to stay safe because of a storm", "A type of cloud", "A sunny day"],
+      answer: "A message to stay safe because of a storm",
+    },
+    {
+      question: "What causes the sound of 'Thunder'?",
+      choices: ["Lightning heating up the air", "Clouds bumping together", "Rain hitting the ground", "The wind"],
+      answer: "Lightning heating up the air",
+    },
+    {
+      question: "Where is the SAFEST place to be during a lightning storm?",
+      choices: ["Under a tree", "Inside a building", "In a swimming pool", "On top of a hill"],
+      answer: "Inside a building",
+    },
+    {
+      question: "What do we call a very long time with NO rain?",
+      choices: ["A Flood", "A Drought", "A Season", "A Storm"],
+      answer: "A Drought",
+    },
+    {
+      question: "Why do we have different 'Seasons' like Summer and Winter?",
+      choices: ["The Earth is tilted on its axis", "The Sun turns off", "The Moon blocks the sun", "The clouds move"],
+      answer: "The Earth is tilted on its axis",
+    }
+  ]
+};
+
