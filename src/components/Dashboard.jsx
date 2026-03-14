@@ -22,7 +22,11 @@ import {
 } from "lucide-react";
 
 // QUESTIONS
-import { ROCKS_QUESTIONS } from "../constants/rock";
+import { ROCK_QUESTIONS } from "../constants/rock";
+import { SPACE_QUESTIONS } from "../constants/space";
+import { WEATHER_QUESTIONS } from "../constants/weather";
+import { HUMAN_BODY_QUESTIONS } from "../constants/humanbody";
+import { ANIMAL_QUESTIONS } from "../constants/animals";
 import { MATH_K_QUESTIONS } from "../constants/math/mathKindergarten";
 import { MATH_GRADE1_QUESTIONS } from "../constants/math/mathGrade1";
 import { MATH_GRADE2_QUESTIONS } from "../constants/math/mathGrade2";
@@ -31,11 +35,11 @@ import { MATH_GRADE4_QUESTIONS } from "../constants/math/mathGrade4";
 import { MATH_GRADE5_QUESTIONS } from "../constants/math/mathGrade5";
 
 const QUESTION_MAP = {
-  rocks: ROCKS_QUESTIONS,
-  space: [],
-  weather: [],
-  humanBody: [],
-  animals: [],
+  rocks: ROCK_QUESTIONS,
+  space: SPACE_QUESTIONS,
+  weather: WEATHER_QUESTIONS,
+  humanBody: HUMAN_BODY_QUESTIONS,
+  animals: ANIMAL_QUESTIONS,
   electricity: [],
   coding: [],
   engineering: [],
