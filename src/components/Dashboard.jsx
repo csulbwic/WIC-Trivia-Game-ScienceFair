@@ -226,7 +226,7 @@ export default function Dashboard() {
             {/* left side */}
             <section>
               <div className="mb-6 flex items-center gap-4 rounded-[2rem] bg-[#990033] px-5 py-4">
-                <div className="text-5xl animate-bounce">🤖</div>
+                <div className="text-5xl animate-bounce">🐱 </div>
                 <div>
                   <p className="flex items-center gap-2 text-xl font-extrabold">
                     Pick your math level! <Sparkles className="h-5 w-5" />
@@ -312,7 +312,7 @@ export default function Dashboard() {
       <header className="w-full bg-[#ea638c]">
         <div className="mx-auto max-w-6xl px-6 py-6 text-center">
           <h1 className="text-2xl sm:text-3xl font-extrabold tracking-wide">
-            WIC ACTIVITY: STEM TRIVIA GAME
+            🌼 WIC ACTIVITY: STEM TRIVIA GAME 🌼
           </h1>
         </div>
       </header>
@@ -322,7 +322,7 @@ export default function Dashboard() {
           {/* left side */}
           <section>
             <div className="mb-6 flex items-center gap-4 rounded-[2rem] bg-[#990033] px-5 py-4 shadow-md">
-              <div className="text-5xl animate-bounce">🤖</div>
+              <div className="text-5xl animate-bounce">🐱</div>
               <div>
                 <p className="flex items-center gap-2 text-xl font-extrabold">
                   Hi, Explorer! <Sparkles className="h-5 w-5" />

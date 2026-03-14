@@ -154,7 +154,7 @@ export default function TriviaApp({ theme, questions, boardTitles = [], onBack }
         <div className="mx-auto max-w-6xl px-6 py-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <div className="text-sm font-bold text-white/80">STEM Trivia</div>
+              <div className="text-sm font-bold text-white/80">STEM TRIVIA</div>
               <h1 className="text-2xl sm:text-3xl font-extrabold tracking-wide">
                 {theme.label} Trivia Board
               </h1>
@@ -185,7 +185,7 @@ export default function TriviaApp({ theme, questions, boardTitles = [], onBack }
         {/* mascot + info */}
         <div className="mb-6 flex flex-col gap-4 rounded-[2rem] bg-white text-black px-6 py-5 shadow-lg sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-4">
-            <div className="text-5xl animate-bounce">🤖</div>
+            <div className="text-5xl animate-bounce">🐱</div>
             <div>
               <p className="text-xl font-extrabold">Let’s play {theme.label}!</p>
               {/* <p className="text-black/90">
