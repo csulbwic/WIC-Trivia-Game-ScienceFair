@@ -6,12 +6,6 @@ if (typeof window !== "undefined") {
   // eslint-disable-next-line no-console
   console.log("DEBUG: POINTS loaded:", POINTS);
 }
-const COLS = [
-  { key: "c1", title: "Category A" },
-  { key: "c2", title: "Category B" },
-  { key: "c3", title: "Category C" },
-  { key: "c4", title: "Category D" },
-];
 
 function cx(...xs) {
   return xs.filter(Boolean).join(" ");
@@ -91,7 +85,7 @@ function Modal({ open, title, onClose, children }) {
  * - questions: array length 16
  * - onBack: function
  */
-export default function TriviaApp({ theme, questions, onBack }) {
+export default function TriviaApp({ theme, questions, boardTitles = [], onBack }) {
   const safeQuestions = useMemo(() => questions ?? [], [questions]);
 
   const [completed, setCompleted] = useState(() => new Set());
@@ -103,6 +97,38 @@ export default function TriviaApp({ theme, questions, onBack }) {
     setActiveIdx(idx);
     setRevealAnswer(false);
   };
+
+  // Interleave (column-major) so original groups remain unchanged but display order becomes:
+  // easy1, medium1, hard1, expert1, easy2, medium2, ...
+  const interleaveQuestions = (questions, groupCount = 4) => {
+    if (!questions || questions.length === 0) return [];
+    const itemsPerGroup = Math.ceil(questions.length / groupCount);
+    const result = [];
+
+    for (let i = 0; i < itemsPerGroup; i++) {
+      for (let g = 0; g < groupCount; g++) {
+        const index = g * itemsPerGroup + i;
+        if (questions[index]) {
+          result.push(questions[index]);
+        }
+      }
+    }
+
+    return result;
+  };
+
+  // memoized display order
+  const displayQuestions = useMemo(
+    () => interleaveQuestions(safeQuestions, 4),
+    [safeQuestions]
+  );
+
+  const COLS = [
+    { key: "c1", title: boardTitles[0] ?? "Category A" },
+    { key: "c2", title: boardTitles[1] ?? "Category B" },
+    { key: "c3", title: boardTitles[2] ?? "Category C" },
+    { key: "c4", title: boardTitles[3] ?? "Category D" },
+  ];
 
   const closeTile = () => {
     if (activeIdx !== null) {
@@ -118,7 +144,8 @@ export default function TriviaApp({ theme, questions, onBack }) {
     setRevealAnswer(false);
   };
 
-  const activeQuestion = activeIdx !== null ? safeQuestions[activeIdx] : null;
+  // use displayQuestions when showing the active question
+  const activeQuestion = activeIdx !== null ? displayQuestions[activeIdx] : null;
 
   return (
     <div className="min-h-screen w-full bg-[#fff0f3] text-white overflow-x-hidden">
@@ -161,14 +188,14 @@ export default function TriviaApp({ theme, questions, onBack }) {
             <div className="text-5xl animate-bounce">🤖</div>
             <div>
               <p className="text-xl font-extrabold">Let’s play {theme.label}!</p>
-              <p className="text-black/90">
+              {/* <p className="text-black/90">
                 Tap a card to open a question and earn points.
-              </p>
+              </p> */}
             </div>
           </div>
 
           <div className="rounded-full bg-white/25 px-4 py-2 text-sm font-bold text-white">
-            Completed: {completed.size} / 16
+            Completed: {completed.size} / {displayQuestions.length || 0}
           </div>
         </div>
 
@@ -237,60 +264,60 @@ export default function TriviaApp({ theme, questions, onBack }) {
         onClose={closeTile}
       >
         {activeQuestion ? (
-  <div>
-    <div className="mb-4 flex items-center gap-3">
-      <div className="text-4xl animate-bounce">⭐</div>
-      <div className="text-base font-extrabold text-sky-600 sm:text-lg">
-        {activeQuestion.question}
-      </div>
-    </div>
+          <div>
+            <div className="mb-4 flex items-center gap-3">
+              <div className="text-4xl animate-bounce">⭐</div>
+              <div className="text-base font-extrabold text-sky-600 sm:text-lg">
+                {activeQuestion.question}
+              </div>
+            </div>
 
-    <div className="grid gap-3">
-      {activeQuestion.choices.map((c, i) => (
-        <button
-          key={i}
-          type="button"
-          className="rounded-[1.25rem] border-2 border-slate-200 bg-slate-50 px-4 py-3 text-left transition hover:bg-sky-50 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-300"
-        >
-          <div className="text-xs font-bold uppercase tracking-wide text-slate-400">
-            Choice {i + 1}
+            <div className="grid gap-3">
+              {activeQuestion.choices.map((c, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  className="rounded-[1.25rem] border-2 border-slate-200 bg-slate-50 px-4 py-3 text-left transition hover:bg-sky-50 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-300"
+                >
+                  <div className="text-xs font-bold uppercase tracking-wide text-slate-400">
+                    Choice {i + 1}
+                  </div>
+                  <div className="font-semibold text-slate-800">{c}</div>
+                </button>
+              ))}
+            </div>
+
+            <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <button
+                type="button"
+                onClick={() => setRevealAnswer((v) => !v)}
+                className="rounded-full bg-sky-500 px-4 py-2 text-sm font-extrabold text-white transition hover:bg-sky-400 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-300"
+              >
+                {revealAnswer ? "Hide Answer" : "Show Answer"}
+              </button>
+
+              <button
+                type="button"
+                onClick={closeTile}
+                className="rounded-full bg-emerald-400 px-4 py-2 text-sm font-extrabold text-white transition hover:bg-emerald-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-300"
+              >
+                Done
+              </button>
+            </div>
+
+            {revealAnswer && (
+              <div className="mt-4 rounded-[1.5rem] border-2 border-amber-200 bg-amber-50 p-4">
+                <div className="text-xs font-bold uppercase tracking-wide text-amber-500">
+                  Answer
+                </div>
+                <div className="mt-1 font-extrabold text-slate-800">
+                  {activeQuestion.answer}
+                </div>
+              </div>
+            )}
           </div>
-          <div className="font-semibold text-slate-800">{c}</div>
-        </button>
-      ))}
-    </div>
-
-    <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-      <button
-        type="button"
-        onClick={() => setRevealAnswer((v) => !v)}
-        className="rounded-full bg-sky-500 px-4 py-2 text-sm font-extrabold text-white transition hover:bg-sky-400 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sky-300"
-      >
-        {revealAnswer ? "Hide Answer" : "Show Answer"}
-      </button>
-
-      <button
-        type="button"
-        onClick={closeTile}
-        className="rounded-full bg-emerald-400 px-4 py-2 text-sm font-extrabold text-white transition hover:bg-emerald-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-300"
-      >
-        Done
-      </button>
-    </div>
-
-    {revealAnswer && (
-      <div className="mt-4 rounded-[1.5rem] border-2 border-amber-200 bg-amber-50 p-4">
-        <div className="text-xs font-bold uppercase tracking-wide text-amber-500">
-          Answer
-        </div>
-        <div className="mt-1 font-extrabold text-slate-800">
-          {activeQuestion.answer}
-        </div>
-      </div>
-    )}
-    </div>
         ) : (
-        <div className="text-slate-600">No question found for this tile.</div>
+          <div className="text-slate-600">No question found for this tile.</div>
         )}
       </Modal>
     </div>

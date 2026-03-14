@@ -14,7 +14,7 @@ export const THEMES = {
 
   rocks: {
     key: "rocks",
-    label: "Rocks",
+    label: "Geology",
     pageBg: "from-stone-950 via-amber-950 to-stone-950",
     boardFrame: "bg-white/10",
     colHeader: ["bg-amber-800", "bg-amber-700", "bg-amber-700", "bg-amber-800"],
@@ -92,7 +92,7 @@ export const THEMES = {
 
   coding: {
     key: "coding",
-    label: "Coding",
+    label: "Computer",
     pageBg: "from-slate-950 via-blue-950 to-slate-950",
     boardFrame: "bg-white/10",
     colHeader: ["bg-blue-800", "bg-blue-700", "bg-blue-700", "bg-blue-800"],
@@ -116,18 +116,18 @@ export const THEMES = {
     modalAccent: "text-orange-200",
   },
 
-  volcano: {
-    key: "volcano",
-    label: "Volcano",
-    pageBg: "from-slate-950 via-red-950 to-slate-950",
-    boardFrame: "bg-white/10",
-    colHeader: ["bg-red-800", "bg-red-700", "bg-red-700", "bg-red-800"],
-    cell: "bg-red-700",
-    cellHover: "hover:bg-red-600",
-    ring: "focus-visible:ring-red-200",
-    pill: "bg-red-500/15 text-red-100 border-red-300/25",
-    modalAccent: "text-red-200",
-  },
+  // volcano: {
+  //   key: "volcano",
+  //   label: "Volcano",
+  //   pageBg: "from-slate-950 via-red-950 to-slate-950",
+  //   boardFrame: "bg-white/10",
+  //   colHeader: ["bg-red-800", "bg-red-700", "bg-red-700", "bg-red-800"],
+  //   cell: "bg-red-700",
+  //   cellHover: "hover:bg-red-600",
+  //   ring: "focus-visible:ring-red-200",
+  //   pill: "bg-red-500/15 text-red-100 border-red-300/25",
+  //   modalAccent: "text-red-200",
+  // },
 };
 
 export const THEME_KEYS = Object.keys(THEMES);

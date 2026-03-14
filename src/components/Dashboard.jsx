@@ -27,6 +27,10 @@ import { SPACE_QUESTIONS } from "../constants/space";
 import { WEATHER_QUESTIONS } from "../constants/weather";
 import { HUMAN_BODY_QUESTIONS } from "../constants/humanbody";
 import { ANIMAL_QUESTIONS } from "../constants/animals";
+import { ELECTRICITY_QUESTIONS } from "../constants/electricity";
+import { COMPUTER_SCIENCE_QUESTIONS } from "../constants/computer";
+import { ENGINEERING_QUESTIONS } from "../constants/engineering";
+// math questions
 import { MATH_K_QUESTIONS } from "../constants/math/mathKindergarten";
 import { MATH_GRADE1_QUESTIONS } from "../constants/math/mathGrade1";
 import { MATH_GRADE2_QUESTIONS } from "../constants/math/mathGrade2";
@@ -40,11 +44,22 @@ const QUESTION_MAP = {
   weather: WEATHER_QUESTIONS,
   humanBody: HUMAN_BODY_QUESTIONS,
   animals: ANIMAL_QUESTIONS,
-  electricity: [],
-  coding: [],
-  engineering: [],
-  volcano: [],
+  electricity: ELECTRICITY_QUESTIONS,
+  coding: COMPUTER_SCIENCE_QUESTIONS,
+  engineering: ENGINEERING_QUESTIONS,
+  // volcano: [],
 };
+// const QUESTION_MAP = {
+//   rocks: [],
+//   space: [],
+//   weather: [],
+//   humanBody: [],
+//   animals: ANIMAL_QUESTIONS,
+//   electricity: [],
+//   coding: [],
+//   engineering: [],
+//   volcano: [],
+// };
 
 const MATH_LEVELS = [
   { key: "kindergarten", label: "Kindergarten", emoji: "🧸" },
@@ -63,6 +78,15 @@ const MATH_QUESTIONS_BY_GRADE = {
   grade4: MATH_GRADE4_QUESTIONS,
   grade5: MATH_GRADE5_QUESTIONS,
 };
+
+// const MATH_QUESTIONS_BY_GRADE = {
+//   kindergarten: [],
+//   grade1: [],
+//   grade2: [],
+//   grade3: [],
+//   grade4: [],
+//   grade5: [],
+// };
 
 const CATEGORY_META = {
   math: {
@@ -163,7 +187,8 @@ export default function Dashboard() {
     return (
       <TriviaApp
         theme={THEMES[selectedKey]}
-        questions={QUESTION_MAP[selectedKey] ?? []}
+        questions={QUESTION_MAP[selectedKey]?.question ?? []}
+        boardTitles={QUESTION_MAP[selectedKey]?.boardTitles ?? []}
         onBack={goBackHome}
       />
     );
@@ -178,7 +203,8 @@ export default function Dashboard() {
             MATH_LEVELS.find((level) => level.key === selectedMathGrade)?.label
           }`,
         }}
-        questions={MATH_QUESTIONS_BY_GRADE[selectedMathGrade] ?? []}
+        questions={MATH_QUESTIONS_BY_GRADE[selectedMathGrade]?.question ?? []}
+        boardTitles={MATH_QUESTIONS_BY_GRADE[selectedMathGrade]?.boardTitles ?? []}
         onBack={() => setSelectedMathGrade(null)}
       />
     );
@@ -338,30 +364,32 @@ export default function Dashboard() {
           </section>
 
           {/* right side rules */}
-          <aside className="min-h-[360px] rounded-[2rem] bg-[#be3e82] px-8 py-8 shadow-lg">
-            <h2 className="text-2xl font-extrabold">Game Rules</h2>
+          <aside className="min-h-[360px] rounded-[2rem] bg-[#aa4465] px-4 py-8 shadow-lg">
+            <h2 className="text-2xl font-extrabold">PRIZE</h2>
 
             <div className="mt-5 space-y-4 text-base leading-relaxed text-white/95 sm:text-lg">
               <p>
-                <span className="mr-2 font-bold">1.</span>
-                Choose a STEM category to start.
+                <span className="mr-2 font-bold">🍭</span>
+                0 - 200 POINTS = 1 CANDY
               </p>
               <p>
-                <span className="mr-2 font-bold">2.</span>
-                Math lets you pick a grade level first.
+                <span className="mr-2 font-bold">🍭</span>
+                300 POINTS - 400 POINTS = 2 CANDIES
               </p>
               <p>
-                <span className="mr-2 font-bold">3.</span>
-                Each board has 16 question tiles.
+                <span className="mr-2 font-bold">🍭</span>
+                500 POINTS - 700 POINTS = 3 CANDIES
               </p>
               <p>
-                <span className="mr-2 font-bold">4.</span>
-                Use Show Answer when needed.
+                <span className="mr-2 font-bold">🍭</span>
+                800 POINTS - 9000 POINTS = 4 CANDIES
               </p>
+
               <p>
-                <span className="mr-2 font-bold">5.</span>
-                Completed tiles will show a check mark.
+                <span className="mr-2 font-bold">🍭</span>
+                900 POINTS - 1000 POINTS = 5 CANDIES + STICKERS
               </p>
+              
             </div>
           </aside>
         </div>

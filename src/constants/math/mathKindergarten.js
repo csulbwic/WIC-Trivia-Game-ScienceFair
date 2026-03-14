@@ -1,4 +1,6 @@
-export const MATH_K_QUESTIONS = [
+export const MATH_K_QUESTIONS = {
+  boardTitles:['val1','val2','val3','val4'],
+  question:[
   {
     question: "What number comes after 4?",
     choices: ["3", "5", "6", "7"],
@@ -79,4 +81,5 @@ export const MATH_K_QUESTIONS = [
     choices: ["1", "2", "3", "4"],
     answer: "2",
   },
-];
+]
+};

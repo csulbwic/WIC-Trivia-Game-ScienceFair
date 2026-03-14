@@ -1,89 +1,94 @@
-export const HUMAN_BODY_QUESTIONS = [
-  // Kindergarten / very easy
-  {
-    question: "Which part of the body do we use to see?",
-    choices: ["Nose", "Eyes", "Hands", "Feet"],
-    answer: "Eyes",
-  },
-  {
-    question: "Which part do we use to smell?",
-    choices: ["Ears", "Mouth", "Nose", "Knee"],
-    answer: "Nose",
-  },
-  {
-    question: "How many legs does a person usually have?",
-    choices: ["1", "2", "3", "4"],
-    answer: "2",
-  },
-  {
-    question: "Which body part helps you pick up things?",
-    choices: ["Feet", "Hands", "Hair", "Elbow"],
-    answer: "Hands",
-  },
+export const HUMAN_BODY_QUESTIONS = {
+  // Titles aligned with Elementary Health & Science stages
+  boardTitles: ['Senses', 'Organs', 'Healthy Habits', 'Systems'],
 
-  // Early elementary / basic functions
-  {
-    question: "What do we call the food we eat that helps us grow?",
-    choices: ["Water", "Food", "Air", "Toys"],
-    answer: "Food",
-  },
-  {
-    question: "Which organ pumps blood around the body?",
-    choices: ["Liver", "Lungs", "Heart", "Kidney"],
-    answer: "Heart",
-  },
-  {
-    question: "Which organ do we use to breathe in air?",
-    choices: ["Stomach", "Lungs", "Eyes", "Skin"],
-    answer: "Lungs",
-  },
-  {
-    question: "Which sense helps you taste food?",
-    choices: ["Sight", "Touch", "Taste", "Hearing"],
-    answer: "Taste",
-  },
+  question: [
+    // --- Kindergarten - Grade 1: The Five Senses ---
+    {
+      question: "Which part of the body do we use to see colors and shapes?",
+      choices: ["Nose", "Eyes", "Hands", "Feet"],
+      answer: "Eyes",
+    },
+    {
+      question: "Which part of your face do we use to smell a flower?",
+      choices: ["Ears", "Mouth", "Nose", "Knee"],
+      answer: "Nose",
+    },
+    {
+      question: "What do we use our tongue for?",
+      choices: ["Hearing", "Touching", "Tasting", "Smelling"],
+      answer: "Tasting",
+    },
+    {
+      question: "Which body part helps you feel if something is hot or cold?",
+      choices: ["Hair", "Skin", "Eyelashes", "Elbow"],
+      answer: "Skin",
+    },
 
-  // Upper elementary / systems and health
-  {
-    question: "Which system includes the brain, spinal cord, and nerves?",
-    choices: ["Digestive system", "Nervous system", "Circulatory system", "Respiratory system"],
-    answer: "Nervous system",
-  },
-  {
-    question: "What is the main job of the digestive system?",
-    choices: ["Make blood", "Break down food for energy", "Help you breathe", "Filter waste only"],
-    answer: "Break down food for energy",
-  },
-  {
-    question: "Which nutrient helps build and repair body tissues?",
-    choices: ["Protein", "Sugar", "Salt", "Fat"],
-    answer: "Protein",
-  },
-  {
-    question: "What do bones do for the body?",
-    choices: ["Give support and protect organs", "Make blood", "Store air", "Make you sleep"],
-    answer: "Give support and protect organs",
-  },
+    // --- Grades 2-3: Organs & Their Jobs ---
+    {
+      question: "Which organ pumps blood to the rest of your body?",
+      choices: ["Liver", "Lungs", "Heart", "Stomach"],
+      answer: "Heart",
+    },
+    {
+      question: "Which organ fills with air when you take a deep breath?",
+      choices: ["Stomach", "Lungs", "Brain", "Kidneys"],
+      answer: "Lungs",
+    },
+    {
+      question: "What is the hard frame inside your body called?",
+      choices: ["Muscles", "Skin", "Skeleton", "Nerves"],
+      answer: "Skeleton",
+    },
+    {
+      question: "Which part of your body is like a 'computer' that sends signals?",
+      choices: ["Stomach", "Heart", "Brain", "Liver"],
+      answer: "Brain",
+    },
 
-  // Challenging / 4th-grade level concepts
-  {
-    question: "Which organ helps filter waste from the blood and makes urine?",
-    choices: ["Kidneys", "Stomach", "Heart", "Intestine"],
-    answer: "Kidneys",
-  },
-  {
-    question: "What is the function of red blood cells?",
-    choices: ["Fight germs", "Carry oxygen to body cells", "Make hormones", "Digest food"],
-    answer: "Carry oxygen to body cells",
-  },
-  {
-    question: "Which part of the brain controls balance and coordination?",
-    choices: ["Cerebellum", "Cerebrum", "Brainstem", "Hypothalamus"],
-    answer: "Cerebellum",
-  },
-  {
-    question: "Which system helps the body fight infections and stay healthy?",
-    choices: ["Digestive system", "Immune system", "Respiratory system", "Circulatory system"],
-    answer: "Immune system",
-  },
-];
+    // --- Grades 3-4: Healthy Habits & Digestion ---
+    {
+      question: "What is the main job of the digestive system?",
+      choices: ["Make blood", "Break down food for energy", "Help you jump", "Store air"],
+      answer: "Break down food for energy",
+    },
+    {
+      question: "Which of these is best for keeping your bones and teeth strong?",
+      choices: ["Soda", "Calcium (Milk/Broccoli)", "Candy", "Chips"],
+      answer: "Calcium (Milk/Broccoli)",
+    },
+    {
+      question: "How long should you wash your hands to get rid of germs?",
+      choices: ["2 seconds", "20 seconds", "1 minute", "5 minutes"],
+      answer: "20 seconds",
+    },
+    {
+      question: "Which system helps your body fight off a cold or the flu?",
+      choices: ["Digestive", "Immune", "Respiratory", "Skeletal"],
+      answer: "Immune",
+    },
+
+    // --- Grade 5: Complex Systems ---
+    {
+      question: "Which two systems work together to help you walk and run?",
+      choices: ["Skeletal and Muscular", "Nervous and Digestive", "Circulatory and Immune", "Endocrine and Respiratory"],
+      answer: "Skeletal and Muscular",
+    },
+    {
+      question: "What do red blood cells carry to all the parts of your body?",
+      choices: ["Food crumbs", "Oxygen", "Water only", "Carbon dioxide"],
+      answer: "Oxygen",
+    },
+    {
+      question: "What are the tiny 'building blocks' that make up every part of your body?",
+      choices: ["Organs", "Tissues", "Cells", "Systems"],
+      answer: "Cells",
+    },
+    {
+      question: "Which system moves blood, nutrients, and waste through the body?",
+      choices: ["Circulatory", "Respiratory", "Digestive", "Nervous"],
+      answer: "Circulatory",
+    },
+  ]
+};

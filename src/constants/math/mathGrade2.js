@@ -1,82 +1,95 @@
-export const MATH_GRADE2_QUESTIONS = [
-  {
-    question: "12 + 9 = ?",
-    choices: ["20", "21", "19", "18"],
-    answer: "21",
-  },
-  {
-    question: "15 - 7 = ?",
-    choices: ["7", "8", "9", "6"],
-    answer: "8",
-  },
-  {
-    question: "6 × 2 = ?",
-    choices: ["10", "12", "8", "14"],
-    answer: "12",
-  },
-  {
-    question: "18 ÷ 3 = ?",
-    choices: ["4", "5", "6", "7"],
-    answer: "6",
-  },
-  {
-    question: "What is the value of the digit 5 in 54?",
-    choices: ["5", "50", "500", "0"],
-    answer: "50",
-  },
-  {
-    question: "Which number is even?",
-    choices: ["33", "47", "58", "21"],
-    answer: "58",
-  },
-  {
-    question: "What comes next: 10, 20, 30, ?",
-    choices: ["40", "50", "60", "70"],
-    answer: "40",
-  },
-  {
-    question: "23 + 7 = ?",
-    choices: ["28", "29", "30", "31"],
-    answer: "30",
-  },
-  {
-    question: "40 - 18 = ?",
-    choices: ["20", "21", "22", "23"],
-    answer: "22",
-  },
-  {
-    question: "How many dimes are in 50¢?",
-    choices: ["5", "10", "50", "2"],
-    answer: "5",
-  },
-  {
-    question: "What time is the clock if the short hand is on 3 and the long hand is on 12?",
-    choices: ["3:00", "12:03", "9:00", "6:00"],
-    answer: "3:00",
-  },
-  {
-    question: "100 - 47 = ?",
-    choices: ["52", "53", "54", "43"],
-    answer: "53",
-  },
-  {
-    question: "9 + 9 = ?",
-    choices: ["17", "18", "19", "20"],
-    answer: "18",
-  },
-  {
-    question: "Which number is the greatest?",
-    choices: ["72", "27", "62", "37"],
-    answer: "72",
-  },
-  {
-    question: "14 + 8 = ?",
-    choices: ["20", "21", "22", "23"],
-    answer: "22",
-  },
-  {
-    question: "30 ÷ 5 = ?",
-    choices: ["5", "6", "10", "7"],
-    answer: "6",
-  },
-];
+export const MATH_GRADE2_QUESTIONS = {
+  // Aligned to CA 'Big Ideas': Place Value, Calculation, Measurement, and Data
+  boardTitles: ['Place Value', 'Operations', 'Measurement', 'Money & Time'],
+  question: [
+    // --- Number & Operations in Base Ten (2.NBT) ---
+    {
+      question: "What is the value of the 5 in the number 542?",
+      choices: ["5", "50", "500", "5,000"],
+      answer: "500",
+    },
+    {
+      question: "Which number is the same as 3 hundreds, 0 tens, and 7 ones?",
+      choices: ["37", "370", "307", "703"],
+      answer: "307",
+    },
+    {
+      question: "Which symbol makes this true? 702 __ 698",
+      choices: [">", "<", "=", "-"],
+      answer: ">",
+    },
+    {
+      question: "Count by 5s: 125, 130, 135, __",
+      choices: ["136", "140", "145", "150"],
+      answer: "140",
+    },
+
+    // --- Operations & Algebraic Thinking (2.OA) ---
+    {
+      question: "Solve: 46 + 25 = ?",
+      choices: ["61", "71", "65", "75"],
+      answer: "71",
+    },
+    {
+      question: "Which equation shows the total for 3 rows of 5 stars?",
+      choices: ["3 + 5", "5 + 5 + 5", "3 + 3 + 3", "5 - 3"],
+      answer: "5 + 5 + 5",
+    },
+    {
+      question: "Which number is even?",
+      choices: ["13", "25", "42", "57"],
+      answer: "42",
+    },
+    {
+      question: "If you have 18 stickers and give 9 away, how many are left?",
+      choices: ["7", "8", "9", "10"],
+      answer: "9",
+    },
+
+    // --- Measurement & Data (2.MD) ---
+    {
+      question: "About how many inches long is a standard yellow pencil?",
+      choices: ["2 inches", "7 inches", "20 inches", "100 inches"],
+      answer: "7 inches",
+    },
+    {
+      question: "If a string is 15 cm long and you cut off 7 cm, how long is it now?",
+      choices: ["6 cm", "7 cm", "8 cm", "9 cm"],
+      answer: "8 cm",
+    },
+    {
+      question: "How many centimeters are in 1 meter?",
+      choices: ["10", "50", "100", "1,000"],
+      answer: "100",
+    },
+
+    // --- Money & Time (2.MD.7-8) ---
+    {
+      question: "You have 2 quarters, 1 dime, and 3 pennies. How much money is that?",
+      choices: ["53¢", "63¢", "35¢", "73¢"],
+      answer: "63¢",
+    },
+    {
+      question: "The hour hand is between 4 and 5. The minute hand is on 6. What time is it?",
+      choices: ["4:06", "5:30", "4:30", "6:04"],
+      answer: "4:30",
+    },
+    {
+      question: "How many nickels do you need to make 25¢?",
+      choices: ["2", "5", "10", "25"],
+      answer: "5",
+    },
+    {
+      question: "A movie starts at 2:00 and lasts 2 hours. What time does it end?",
+      choices: ["3:00", "4:00", "12:00", "2:02"],
+      answer: "4:00",
+    },
+
+    // --- Geometry (2.G) ---
+    {
+      question: "Which shape has exactly 5 sides and 5 corners?",
+      choices: ["Square", "Hexagon", "Pentagon", "Triangle"],
+      answer: "Pentagon",
+    }
+  ]
+};

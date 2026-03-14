@@ -1,9 +1,13 @@
-export const MATH_GRADE3_QUESTIONS = [
-  {
+export const MATH_GRADE3_QUESTIONS = {
+  // Aligned to CA Framework: Mult/Div, Fractions, Area, and Data/Time
+  boardTitles: ['Mult & Div', 'Fractions', 'Measurement', 'Area & Shapes'],
+  question: [
+    // --- Multiplication & Division (3.OA) ---
+    {
     question: "4 + 3 = ?",
     choices: ["6", "7", "8", "9"],
     answer: "7",
-  },
+    },
   {
     question: "10 - 6 = ?",
     choices: ["2", "3", "4", "5"],
@@ -78,5 +82,7 @@ export const MATH_GRADE3_QUESTIONS = [
     question: "Which fraction is greater? 3/4 or 2/3?",
     choices: ["2/3", "3/4", "They are equal", "Can't tell"],
     answer: "3/4",
-  },
-];
+  }
+  ] 
+  
+};
