@@ -1,4 +1,4 @@
-# Science Kid Fair - Trivia Game for Kids
+# 🌷 Science Kid Fair - Trivia Game for Kids 
 
 A simple, kid-friendly trivia game built with React and Vite. This project provides multiple themed question sets (animals, space, weather, math, and more) suitable for classroom demos or science fair presentations.
 
