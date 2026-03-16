@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import TriviaApp from "./TriviaApp";
 import { THEMES, THEME_KEYS } from "../constants/themes";
-
 // ICONS
 import {
   Calculator,
@@ -19,6 +18,9 @@ import {
   BookOpen,
   Pencil,
   Trophy,
+
+  //icon
+  Flower
 } from "lucide-react";
 
 // QUESTIONS
@@ -364,31 +366,36 @@ export default function Dashboard() {
           </section>
 
           {/* right side rules */}
-          <aside className="min-h-[360px] rounded-[2rem] bg-[#aa4465] px-4 py-8 shadow-lg">
-            <h2 className="text-2xl font-extrabold">PRIZE</h2>
+          <aside className="min-h-[360px] rounded-[2rem] bg-[#dd2d4a] px-4 py-8 shadow-lg">
+            <h2 className="text-3xl font-extrabold text-center">GAME RULE</h2>
 
-            <div className="mt-5 space-y-4 text-base leading-relaxed text-white/95 sm:text-lg">
+            <div className="mt-5 space-y-5 space-x-2 text-base leading-relaxed text-white/95 sm:text-lg">
               <p>
                 <span className="mr-2 font-bold">🍭</span>
-                0 - 200 POINTS = 1 CANDY
+                Choose Your Challenge: Select a question from any category—higher point values (400 points) are more difficult than lower ones (100 points).
               </p>
               <p>
                 <span className="mr-2 font-bold">🍭</span>
-                300 POINTS - 400 POINTS = 2 CANDIES
+                One Answer Only: You have one chance to select the correct answer for each question, so read all choices carefully before deciding!
               </p>
               <p>
                 <span className="mr-2 font-bold">🍭</span>
-                500 POINTS - 700 POINTS = 3 CANDIES
+                Climb the Leaderboard: Your goal is to collect as many points as possible to reach the highest prize tier.
               </p>
               <p>
                 <span className="mr-2 font-bold">🍭</span>
-                800 POINTS - 900 POINTS = 4 CANDIES
+                Earn Your Sweets: Remember, "The more questions you answer correctly, the more candy you can get!
               </p>
 
               <p>
                 <span className="mr-2 font-bold">🍭</span>
                 900 POINTS - 1000 POINTS = 5 CANDIES + STICKERS
               </p>
+
+              {/* <p>
+                <span className="mr-2 font-bold">🍭</span>
+                900 POINTS - 1000 POINTS = 5 CANDIES + STICKERS
+              </p> */}
               
             </div>
           </aside>
